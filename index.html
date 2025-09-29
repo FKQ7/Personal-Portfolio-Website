@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro&family=Vazirmatn:wght@100..900&display=swap');
+.readex-pro {
+  font-family: "Readex Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "HEXP" 0;
+}
+.card {
+      border: 1px solid #000000;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+.card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(30, 215, 96, 0.1), 0 4px 6px -2px rgba(30, 215, 96, 0.05);
+}
+.social-icon svg {
+        transition: color 0.3s ease;
+}
+.social-icon:hover svg {
+        color: #1ED760;
+}
+.project-arrow {
+        transition: transform 0.3s ease;
+}
+.card:hover .project-arrow {
+        transform: translateX(5px);
+}
+</style>
+
+</head>
+<body class="mx-auto readex-pro font-poppins min-h-screen max-w-screen-xl bg-background-color text-primary p-5 xl:pt-10">
+  <div class="container pt-5 xl:flex xl:gap-x-20">
+    <header class="header xl:w-1/2 xl:pr-32">
+      <div>
+        <h1 class="text-5xl font-bold xl:text-6xl">Fayez Khalid</h1>
+        <h3 class="text-3xl font-semibold text-secondary pt-2 xl:pt-4">Software Engineer</h3>
+        <p class="text-lg pt-1">Software Engineering Undergraduate | GPA 3.92/4.0 | Full-Stack & AI/ML Enthusiast | Hackathon Participant</p>
+        <div class="flex items-center gap-x-4 pt-4">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary transition-colors" aria-label="GitHub Profile">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.65.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary transition-colors" aria-label="LinkedIn Profile">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary transition-colors" aria-label="X Profile">
+             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.931ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+            </svg>
+          </a>
+        </div>        
+      </div>
+      <div class="pt-7">
+        <h2 class="text-4xl font-bold text-secondary">About</h2>
+        <p class="text-2xl xl:text-3xl pt-3 font-bold">
+          I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful 
+        </p>
+      </div>
+    </header>
+    <main class="xl: xl:pt-0 pt-10 xl:w-1/2">
+      <section class="projects-section">
+                        <h2 class="text-3xl font-bold">Projects</h2>
+      <div class="card bg-black w-full h-full rounded-lg mt-5 p-3" style="background: linear-gradient(140deg,rgba(42, 42, 42, 1) 50%, rgba(33, 201, 101, 1) 100%);" >
+              <a href="#">
+          <h4 class="text-xl font-bold text-secondary">Build a Spotify Connected App</h4>
+        <p class="pt-2">Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify.</p>
+        <div class="flex justify-end pt-1">
+                  <svg width="38px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <title>ic_fluent_swipe_right_24_regular</title>
+            <desc>Created with Sketch.</desc>
+            <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="ic_fluent_swipe_right_24_regular" fill="#ffff" fill-rule="nonzero">
+                    <path d="M5.99663564,12 C5.99663564,12.3796958 6.2785522,12.693491 6.64431986,12.7431534 L6.74600482,12.75 L19.4403188,12.75 L17.2236906,14.9696699 C16.957648,15.2359365 16.9334623,15.6526002 17.1511335,15.9462117 L17.2236906,16.0303301 C17.4897332,16.2965966 17.9060464,16.3208027 18.199411,16.1029482 L18.2834587,16.0303301 L21.7805148,12.5303301 C22.0465575,12.2640635 22.0707431,11.8473998 21.8530719,11.5537883 L21.7805148,11.4696699 L18.2834587,7.96966991 C17.9908118,7.6767767 17.5163375,7.6767767 17.2236906,7.96966991 C16.957648,8.23593648 16.9334623,8.65260016 17.1511335,8.94621165 L17.2236906,9.03033009 L19.4403188,11.25 L6.74600482,11.25 C6.33213965,11.25 5.99663564,11.5857864 5.99663564,12 Z M2,12 C2,14.7614237 4.23669341,17 6.99579455,17 C9.13942126,17 10.9677126,15.6487523 11.6767209,13.7508814 L10.02458,13.7507384 C9.41981754,14.7964836 8.28989447,15.5 6.99579455,15.5 C5.06442375,15.5 3.49873836,13.9329966 3.49873836,12 C3.49873836,10.0670034 5.06442375,8.5 6.99579455,8.5 C8.29030194,8.5 9.42052906,9.20395951 10.0251511,10.2502495 L11.6770941,10.2501179 C10.9683543,8.35172204 9.13979746,7 6.99579455,7 C4.23669341,7 2,9.23857625 2,12 Z" id="🎨-Color">
+
+                </path>
+                        </g>
+                    </g>
+                </svg>
+        </div>
+        </a>
+      </div>
+            <div class="card bg-black w-full h-full rounded-lg mt-5 p-3" style="background: linear-gradient(140deg,rgba(42, 42, 42, 1) 50%, rgba(33, 201, 101, 1) 100%);" >
+              <a href="#">
+          <h4 class="text-xl font-bold text-secondary">Build a Spotify Connected App</h4>
+        <p class="pt-2">Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify.</p>
+        <div class="flex justify-end pt-1">
+                  <svg width="38px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <title>ic_fluent_swipe_right_24_regular</title>
+            <desc>Created with Sketch.</desc>
+            <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="ic_fluent_swipe_right_24_regular" fill="#ffff" fill-rule="nonzero">
+                    <path d="M5.99663564,12 C5.99663564,12.3796958 6.2785522,12.693491 6.64431986,12.7431534 L6.74600482,12.75 L19.4403188,12.75 L17.2236906,14.9696699 C16.957648,15.2359365 16.9334623,15.6526002 17.1511335,15.9462117 L17.2236906,16.0303301 C17.4897332,16.2965966 17.9060464,16.3208027 18.199411,16.1029482 L18.2834587,16.0303301 L21.7805148,12.5303301 C22.0465575,12.2640635 22.0707431,11.8473998 21.8530719,11.5537883 L21.7805148,11.4696699 L18.2834587,7.96966991 C17.9908118,7.6767767 17.5163375,7.6767767 17.2236906,7.96966991 C16.957648,8.23593648 16.9334623,8.65260016 17.1511335,8.94621165 L17.2236906,9.03033009 L19.4403188,11.25 L6.74600482,11.25 C6.33213965,11.25 5.99663564,11.5857864 5.99663564,12 Z M2,12 C2,14.7614237 4.23669341,17 6.99579455,17 C9.13942126,17 10.9677126,15.6487523 11.6767209,13.7508814 L10.02458,13.7507384 C9.41981754,14.7964836 8.28989447,15.5 6.99579455,15.5 C5.06442375,15.5 3.49873836,13.9329966 3.49873836,12 C3.49873836,10.0670034 5.06442375,8.5 6.99579455,8.5 C8.29030194,8.5 9.42052906,9.20395951 10.0251511,10.2502495 L11.6770941,10.2501179 C10.9683543,8.35172204 9.13979746,7 6.99579455,7 C4.23669341,7 2,9.23857625 2,12 Z" id="🎨-Color">
+
+                </path>
+                        </g>
+                    </g>
+                </svg>
+        </div>
+        </a>
+      </div>
+        <div class="card bg-black w-full h-full rounded-lg mt-5 p-3" style="background: linear-gradient(140deg,rgba(42, 42, 42, 1) 50%, rgba(33, 201, 101, 1) 100%);" >
+              <a href="#">
+          <h4 class="text-xl font-bold text-secondary">Build a Spotify Connected App</h4>
+        <p class="pt-2">Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify.</p>
+        <div class="flex justify-end pt-1">
+                  <svg width="38px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <title>ic_fluent_swipe_right_24_regular</title>
+            <desc>Created with Sketch.</desc>
+            <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="ic_fluent_swipe_right_24_regular" fill="#ffff" fill-rule="nonzero">
+                    <path d="M5.99663564,12 C5.99663564,12.3796958 6.2785522,12.693491 6.64431986,12.7431534 L6.74600482,12.75 L19.4403188,12.75 L17.2236906,14.9696699 C16.957648,15.2359365 16.9334623,15.6526002 17.1511335,15.9462117 L17.2236906,16.0303301 C17.4897332,16.2965966 17.9060464,16.3208027 18.199411,16.1029482 L18.2834587,16.0303301 L21.7805148,12.5303301 C22.0465575,12.2640635 22.0707431,11.8473998 21.8530719,11.5537883 L21.7805148,11.4696699 L18.2834587,7.96966991 C17.9908118,7.6767767 17.5163375,7.6767767 17.2236906,7.96966991 C16.957648,8.23593648 16.9334623,8.65260016 17.1511335,8.94621165 L17.2236906,9.03033009 L19.4403188,11.25 L6.74600482,11.25 C6.33213965,11.25 5.99663564,11.5857864 5.99663564,12 Z M2,12 C2,14.7614237 4.23669341,17 6.99579455,17 C9.13942126,17 10.9677126,15.6487523 11.6767209,13.7508814 L10.02458,13.7507384 C9.41981754,14.7964836 8.28989447,15.5 6.99579455,15.5 C5.06442375,15.5 3.49873836,13.9329966 3.49873836,12 C3.49873836,10.0670034 5.06442375,8.5 6.99579455,8.5 C8.29030194,8.5 9.42052906,9.20395951 10.0251511,10.2502495 L11.6770941,10.2501179 C10.9683543,8.35172204 9.13979746,7 6.99579455,7 C4.23669341,7 2,9.23857625 2,12 Z" id="🎨-Color">
+
+                </path>
+                        </g>
+                    </g>
+                </svg>
+        </div>
+        </a>
+      </div>
+      </a>
+      </section> 
+      <hr class="my-5 border-t border-secondary"> 
+      <section class="blogs-section">
+      <h2 class="text-3xl font-bold">Writings</h2>
+      <a href="">
+      <div class="card bg-black w-full h-full rounded-lg mt-5 p-3" style="background: linear-gradient(140deg,rgba(42, 42, 42, 1) 50%, rgba(33, 201, 101, 1) 100%);" >
+        <div class="flex flex-row">
+          <img class="w-[150px] h-[150px] xl:w-[200px] xl:h-[200px] rounded-lg" src="https://placehold.co/500x500" alt="">
+          <div class="pl-5">
+            <h4 class="text-2xl font-bold text-secondary">Build a Spotify Connected App</h4>
+            <p class="hidden xl:block">Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify.</p>
+          </div>
+        </div>
+        <div class="">
+                <p class="xl:hidden pt-3 text-lg">Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify.</p>
+        <div class="flex justify-end">
+                  <svg width="38px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>ic_fluent_swipe_right_24_regular</title>
+            <desc>Created with Sketch.</desc>
+            <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="ic_fluent_swipe_right_24_regular" fill="#ffff" fill-rule="nonzero">
+                    <path d="M5.99663564,12 C5.99663564,12.3796958 6.2785522,12.693491 6.64431986,12.7431534 L6.74600482,12.75 L19.4403188,12.75 L17.2236906,14.9696699 C16.957648,15.2359365 16.9334623,15.6526002 17.1511335,15.9462117 L17.2236906,16.0303301 C17.4897332,16.2965966 17.9060464,16.3208027 18.199411,16.1029482 L18.2834587,16.0303301 L21.7805148,12.5303301 C22.0465575,12.2640635 22.0707431,11.8473998 21.8530719,11.5537883 L21.7805148,11.4696699 L18.2834587,7.96966991 C17.9908118,7.6767767 17.5163375,7.6767767 17.2236906,7.96966991 C16.957648,8.23593648 16.9334623,8.65260016 17.1511335,8.94621165 L17.2236906,9.03033009 L19.4403188,11.25 L6.74600482,11.25 C6.33213965,11.25 5.99663564,11.5857864 5.99663564,12 Z M2,12 C2,14.7614237 4.23669341,17 6.99579455,17 C9.13942126,17 10.9677126,15.6487523 11.6767209,13.7508814 L10.02458,13.7507384 C9.41981754,14.7964836 8.28989447,15.5 6.99579455,15.5 C5.06442375,15.5 3.49873836,13.9329966 3.49873836,12 C3.49873836,10.0670034 5.06442375,8.5 6.99579455,8.5 C8.29030194,8.5 9.42052906,9.20395951 10.0251511,10.2502495 L11.6770941,10.2501179 C10.9683543,8.35172204 9.13979746,7 6.99579455,7 C4.23669341,7 2,9.23857625 2,12 Z" id="🎨-Color">
+
+                </path>
+                        </g>
+                    </g>
+                </svg>
+        </div>
+        </div>
+      </div>
+      
+      </a>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
