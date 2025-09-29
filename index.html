@@ -34,11 +34,86 @@
 .card:hover .project-arrow {
         transform: translateX(5px);
 }
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  background: linear-gradient(-45deg, #ffffff, #1ED760, #ffffff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-flow 4s ease infinite;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  background: linear-gradient(-45deg, #ffffff, #1ED760, #ffffff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-flow 8s ease infinite;
+}
+
+
+.header h3,
+.header > div > p,
+.header .flex, 
+.header .pt-7 > h2,
+.header .pt-7 > p,
+.projects-section > h2,
+.projects-section .card,
+.blogs-section > h2,
+.blogs-section .card {
+  opacity: 0; 
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+
+.header h3 { animation-delay: 0.2s; }
+.header > div > p { animation-delay: 0.4s; }
+.header .flex { animation-delay: 0.6s; }
+.header .pt-7 > h2 { animation-delay: 0.8s; } 
+.header .pt-7 > p { animation-delay: 1.0s; } 
+.projects-section > h2 { animation-delay: 1.2s; }
+.projects-section .card:nth-of-type(1) { animation-delay: 1.4s; }
+.projects-section .card:nth-of-type(2) { animation-delay: 1.6s; }
+.projects-section .card:nth-of-type(3) { animation-delay: 1.8s; }
+.blogs-section > h2 { animation-delay: 2.0s; }
+.blogs-section .card { animation-delay: 2.2s; }
+
 </style>
 
 </head>
 <body class="mx-auto readex-pro font-poppins min-h-screen max-w-screen-xl bg-background-color text-primary p-5 xl:pt-10">
-  <div class="container pt-5 xl:flex xl:gap-x-20">
+  <div class="container pt-5 ">
+    <div class="xl:flex xl:gap-x-20">
     <header class="header xl:w-1/2 xl:pr-32">
       <div>
         <h1 class="text-5xl font-bold xl:text-6xl">Fayez Khalid</h1>
@@ -78,7 +153,6 @@
         <p class="pt-2">Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify.</p>
         <div class="flex justify-end pt-1">
                   <svg width="38px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <title>ic_fluent_swipe_right_24_regular</title>
             <desc>Created with Sketch.</desc>
             <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -98,7 +172,6 @@
         <p class="pt-2">Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify.</p>
         <div class="flex justify-end pt-1">
                   <svg width="38px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <title>ic_fluent_swipe_right_24_regular</title>
             <desc>Created with Sketch.</desc>
             <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -118,7 +191,6 @@
         <p class="pt-2">Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify.</p>
         <div class="flex justify-end pt-1">
                   <svg width="38px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <title>ic_fluent_swipe_right_24_regular</title>
             <desc>Created with Sketch.</desc>
             <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -140,7 +212,7 @@
       <a href="">
       <div class="card bg-black w-full h-full rounded-lg mt-5 p-3" style="background: linear-gradient(140deg,rgba(42, 42, 42, 1) 50%, rgba(33, 201, 101, 1) 100%);" >
         <div class="flex flex-row">
-          <img class="w-[150px] h-[150px] xl:w-[200px] xl:h-[200px] rounded-lg" src="https://placehold.co/500x500" alt="">
+          <img class="w-[150px] h-[150px] xl:w-[200px] xl:h-[200px] rounded-lg" src="https://placehold.co/300x300" alt="">
           <div class="pl-5">
             <h4 class="text-2xl font-bold text-secondary">Build a Spotify Connected App</h4>
             <p class="hidden xl:block">Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify.</p>
@@ -166,7 +238,9 @@
       
       </a>
       </section>
+      <p class="pt-5">Loosely designed in<!-- --> <a href="https://www.figma.com/" class="font-medium text-secondary hover:text-green-300 focus-visible:text-green-300" target="_blank" rel="noreferrer noopener" aria-label="Figma (opens in a new tab)">Figma</a> <!-- -->and coded in<!-- --> <a href="https://code.visualstudio.com/" class="font-medium text-secondary hover:text-green-300 focus-visible:text-green-300" target="_blank" rel="noreferrer noopener" aria-label="Visual Studio Code (opens in a new tab)">Visual Studio Code</a> <!-- -->by yours truly. Built with<!-- --> <!-- --><!-- --> <a href="https://tailwindcss.com/" class="font-medium text-secondary hover:text-green-300 focus-visible:text-green-300" target="_blank" rel="noreferrer noopener" aria-label="Tailwind CSS (opens in a new tab)">Tailwind CSS</a>, deployed with<!-- --> <a href="https://vercel.com/" class="font-medium text-secondary-400 hover:text-green-300 focus-visible:text-green-300" target="_blank" rel="noreferrer noopener" aria-label="Vercel (opens in a new tab)">Vercel</a>. All text is set in the<!-- --> <a href="https://fonts.google.com/specimen/Almarai" class="font-medium text-secondary hover:text-green-300 focus-visible:text-green-300" target="_blank" rel="noreferrer noopener" aria-label="Almarai (opens in a new tab)">Almarai</a> <!-- -->typeface.</p>
     </main>
+    </div>
   </div>
 </body>
 </html>
